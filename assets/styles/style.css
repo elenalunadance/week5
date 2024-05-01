@@ -6,8 +6,24 @@ body {
     padding: 0;
     margin: 0;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
-    background-color: #272626;
+    background-color: #666464;
     color: aliceblue;
+}
+
+.menu, .footer {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.head-1 {
+    text-align: center;
 }
 
 .galery {
@@ -30,10 +46,9 @@ body {
 
 .left-section {
     display: flex;
+    flex-direction: column;
     flex-grow: 0;
-    gap: 1em;
     width: 30%;
-    padding: 16px;
 }
 
 .card-1 {
@@ -48,18 +63,22 @@ body {
 
 }
 .card-2, .card-3 {
+    display: flex;
     width: 45%;
     flex-grow: 0;
-    border: 2px solid black;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 .card-4 {
+    display: flex;
     width: 100%;
     flex-grow: 0;
-    border: 2px solid black;
 }
 
 .image-1 {
+    display: flex;
+    flex-direction: column;
     width: 30%;
     height: 30%;
     padding-left: 2em;
@@ -68,8 +87,9 @@ body {
 
 .photo-1 {
     width: 45%;
-    height: 10vh;
+    height: 14vh;
     box-shadow: 0px 0px 15px 10px white;
+    margin-left: 2em;
 }
 
 .photo-1:hover {
@@ -78,12 +98,58 @@ body {
 
 .rod {
     width: 100%;
-    height: 80%;
+    height: 100%;
     box-shadow: 0px 0px 15px 10px white;
-    float: none;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .rod:hover {
+    box-shadow: 8px 10px 5px 2px black;
+}
+
+.picture {
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    width: 100%;
+    height: 30%;
+    padding-top: 10px;
+}
+
+.image-2, .image-3 {
+    width: 80%;
+    height: 100%;
+}
+
+.photo-2, .photo-3 {
+    width: 50%;
+    height: 8vh;
+    box-shadow: 0px 0px 15px 10px white;
+    margin-left: 2em;
+}
+
+.photo-2:hover {
+    box-shadow: 8px 10px 5px 2px black;
+}
+
+.photo-3:hover {
+    box-shadow: 8px 10px 5px 2px black;
+}
+
+.image-4 {
+    width: 100%;
+    height: 100%;
+}
+
+.photo-4 {
+    width: 50%;
+    height: 8vh;
+    box-shadow: 0px 0px 15px 10px white;
+    margin-left: 3em;
+}
+
+.photo-4:hover {
     box-shadow: 8px 10px 5px 2px black;
 }
